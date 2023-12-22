@@ -1,0 +1,129 @@
+<circuit version="1.0.0-SR0" rev="1320" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Subcircuit" CircId="Uno-1" mainComp="false" Show_id="true" Show_Val="false" Pos="960,476" rotation="0" hflip="1" vflip="1" label="Uno-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
+<mainCompProps itemtype="MCU" CircId="1_mega328-109" mainComp="true" Show_id="false" Show_Val="false" Pos="20,20" rotation="0" hflip="1" vflip="1" label="1_mega328-109" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="ews banjir.hex" Auto_Load="false" Rst_enabled="true" Ext_Osc="true" Wdt_enabled="false" />
+</item>
+
+<item itemtype="SR04" CircId="SR04-4" mainComp="false" Show_id="false" Show_Val="false" Pos="836,636" rotation="0" hflip="1" vflip="1" label="SR04-4" idLabPos="-16,-48" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Potentiometer" CircId="Potentiometer-11" mainComp="false" ShowProp="Value_Ohm" Show_id="false" Show_Val="true" Pos="724,540" rotation="0" hflip="1" vflip="1" label="Potentiometer-11" idLabPos="-16,-40" labelrot="0" valLabPos="-14,-44" valLabRot="0" Resistance="1000 Ω" Value_Ohm="0 Ω" />
+
+<item itemtype="ResistorDip" CircId="ResistorDip-206" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="916,532" rotation="0" hflip="1" vflip="1" label="ResistorDip-206" idLabPos="-24,-40" labelrot="0" valLabPos="5,-26" valLabRot="90" Resistance="100 Ω" Size="8 _Resist." />
+
+<item itemtype="Ground" CircId="Ground-296" mainComp="false" Show_id="false" Show_Val="false" Pos="708,572" rotation="0" hflip="1" vflip="1" label="Ground-296" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Rail" CircId="Rail-297" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="764,540" rotation="0" hflip="-1" vflip="1" label="Rail-297" idLabPos="-16,-24" labelrot="0" valLabPos="7,-24" valLabRot="0" Voltage="5 V" />
+
+<item itemtype="LedBar" CircId="LedBar-321" mainComp="false" Show_id="false" Show_Val="false" Pos="868,532" rotation="0" hflip="-1" vflip="1" label="LedBar-321" idLabPos="-16,-44" labelrot="0" valLabPos="-16,-56" valLabRot="0" Size="8 _Leds" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Ground" CircId="Ground-411" mainComp="false" Show_id="false" Show_Val="false" Pos="844,588" rotation="0" hflip="1" vflip="1" label="Ground-411" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="AudioOut" CircId="AudioOut-422" mainComp="false" Show_id="false" Show_Val="false" Pos="1172,500" rotation="0" hflip="1" vflip="1" label="AudioOut-422" idLabPos="-20,-36" labelrot="0" valLabPos="-16,20" valLabRot="0" Buzzer="false" Impedance="8 Ω" />
+
+<item itemtype="Ground" CircId="Ground-424" mainComp="false" Show_id="false" Show_Val="false" Pos="1132,520" rotation="0" hflip="1" vflip="1" label="Ground-424" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Capacitor" CircId="Capacitor-558" mainComp="false" ShowProp="Capacitance" Show_id="false" Show_Val="true" Pos="1140,492" rotation="0" hflip="1" vflip="1" label="Capacitor-558" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Capacitance="10 µF" Resistance="1e-06 Ω" InitVolt="0 V" AutoStep="0 _Steps" />
+
+<item itemtype="Node" CircId="Node-337" mainComp="false" Pos="844,516" />
+
+<item itemtype="Node" CircId="Node-340" mainComp="false" Pos="844,524" />
+
+<item itemtype="Node" CircId="Node-343" mainComp="false" Pos="844,532" />
+
+<item itemtype="Node" CircId="Node-346" mainComp="false" Pos="844,540" />
+
+<item itemtype="Node" CircId="Node-349" mainComp="false" Pos="844,548" />
+
+<item itemtype="Node" CircId="Node-352" mainComp="false" Pos="844,556" />
+
+<item itemtype="Node" CircId="Node-412" mainComp="false" Pos="844,564" />
+
+<item itemtype="Node" CircId="Node-445" mainComp="false" Pos="844,508" />
+
+<item itemtype="Node" CircId="Node-448" mainComp="false" Pos="852,508" />
+
+<item itemtype="Connector" uid="connector-500" startpinid="Potentiometer-11-PinM" endpinid="SR04-4-inpin" pointList="724,556,724,612,748,612" />
+
+<item itemtype="Connector" uid="connector-501" startpinid="Ground-296-Gnd" endpinid="Potentiometer-11-PinA" pointList="708,556,708,540" />
+
+<item itemtype="Connector" uid="connector-502" startpinid="LedBar-321-led0-pinP" endpinid="ResistorDip-206-resistor0-ePin0" pointList="884,508,900,508" />
+
+<item itemtype="Connector" uid="connector-503" startpinid="LedBar-321-led1-pinP" endpinid="ResistorDip-206-resistor1-ePin2" pointList="884,516,900,516" />
+
+<item itemtype="Connector" uid="connector-504" startpinid="LedBar-321-led2-pinP" endpinid="ResistorDip-206-resistor2-ePin4" pointList="884,524,900,524" />
+
+<item itemtype="Connector" uid="connector-505" startpinid="LedBar-321-led3-pinP" endpinid="ResistorDip-206-resistor3-ePin6" pointList="884,532,900,532" />
+
+<item itemtype="Connector" uid="connector-506" startpinid="LedBar-321-led4-pinP" endpinid="ResistorDip-206-resistor4-ePin8" pointList="884,540,900,540" />
+
+<item itemtype="Connector" uid="connector-507" startpinid="LedBar-321-led5-pinP" endpinid="ResistorDip-206-resistor5-ePin10" pointList="884,548,900,548" />
+
+<item itemtype="Connector" uid="connector-508" startpinid="ResistorDip-206-resistor6-ePin12" endpinid="LedBar-321-led6-pinP" pointList="900,556,884,556" />
+
+<item itemtype="Connector" uid="connector-509" startpinid="LedBar-321-led7-pinP" endpinid="ResistorDip-206-resistor7-ePin14" pointList="884,564,900,564" />
+
+<item itemtype="Connector" uid="connector-510" startpinid="LedBar-321-led1-pinN" endpinid="Node-337-1" pointList="852,516,844,516" />
+
+<item itemtype="Connector" uid="connector-511" startpinid="LedBar-321-led2-pinN" endpinid="Node-340-1" pointList="852,524,844,524" />
+
+<item itemtype="Connector" uid="connector-512" startpinid="Node-340-2" endpinid="Node-337-0" pointList="844,524,844,516" />
+
+<item itemtype="Connector" uid="connector-513" startpinid="LedBar-321-led3-pinN" endpinid="Node-343-1" pointList="852,532,844,532" />
+
+<item itemtype="Connector" uid="connector-514" startpinid="Node-343-2" endpinid="Node-340-0" pointList="844,532,844,524" />
+
+<item itemtype="Connector" uid="connector-515" startpinid="LedBar-321-led4-pinN" endpinid="Node-346-1" pointList="852,540,844,540" />
+
+<item itemtype="Connector" uid="connector-516" startpinid="Node-346-2" endpinid="Node-343-0" pointList="844,540,844,532" />
+
+<item itemtype="Connector" uid="connector-517" startpinid="LedBar-321-led5-pinN" endpinid="Node-349-1" pointList="852,548,844,548" />
+
+<item itemtype="Connector" uid="connector-518" startpinid="Node-349-2" endpinid="Node-346-0" pointList="844,548,844,540" />
+
+<item itemtype="Connector" uid="connector-519" startpinid="LedBar-321-led6-pinN" endpinid="Node-352-1" pointList="852,556,844,556" />
+
+<item itemtype="Connector" uid="connector-520" startpinid="Node-352-2" endpinid="Node-349-0" pointList="844,556,844,548" />
+
+<item itemtype="Connector" uid="connector-521" startpinid="Node-337-2" endpinid="Node-445-0" pointList="844,516,844,508" />
+
+<item itemtype="Connector" uid="connector-522" startpinid="LedBar-321-led7-pinN" endpinid="Node-412-0" pointList="852,564,844,564" />
+
+<item itemtype="Connector" uid="connector-523" startpinid="Node-412-2" endpinid="Node-352-0" pointList="844,564,844,556" />
+
+<item itemtype="Connector" uid="connector-524" startpinid="Node-412-1" endpinid="Ground-411-Gnd" pointList="844,564,844,572" />
+
+<item itemtype="Connector" uid="connector-528" startpinid="ResistorDip-206-resistor6-ePin13" endpinid="Uno-1-8" pointList="932,556,956,556,956,564,968,564" />
+
+<item itemtype="Connector" uid="connector-529" startpinid="ResistorDip-206-resistor7-ePin15" endpinid="Uno-1-9" pointList="932,564,948,564,948,572,968,572" />
+
+<item itemtype="Connector" uid="connector-530" startpinid="ResistorDip-206-resistor5-ePin11" endpinid="Uno-1-7" pointList="932,548,968,548" />
+
+<item itemtype="Connector" uid="connector-531" startpinid="ResistorDip-206-resistor4-ePin9" endpinid="Uno-1-6" pointList="932,540,968,540" />
+
+<item itemtype="Connector" uid="connector-532" startpinid="ResistorDip-206-resistor3-ePin7" endpinid="Uno-1-5" pointList="932,532,968,532" />
+
+<item itemtype="Connector" uid="connector-533" startpinid="ResistorDip-206-resistor2-ePin5" endpinid="Uno-1-4" pointList="932,524,968,524" />
+
+<item itemtype="Connector" uid="connector-534" startpinid="ResistorDip-206-resistor1-ePin3" endpinid="Uno-1-3" pointList="932,516,968,516" />
+
+<item itemtype="Connector" uid="connector-535" startpinid="ResistorDip-206-resistor0-ePin1" endpinid="Uno-1-2" pointList="932,508,968,508" />
+
+<item itemtype="Connector" uid="connector-536" startpinid="Node-445-2" endpinid="Node-448-0" pointList="844,508,852,508" />
+
+<item itemtype="Connector" uid="connector-537" startpinid="Node-445-1" endpinid="Node-448-1" pointList="844,508,852,508" />
+
+<item itemtype="Connector" uid="connector-538" startpinid="Node-448-2" endpinid="LedBar-321-led0-pinN" pointList="852,508,852,508" />
+
+<item itemtype="Connector" uid="connector-526" startpinid="SR04-4-trigpin" endpinid="Uno-1-10" pointList="836,684,836,700,932,700,932,580,968,580" />
+
+<item itemtype="Connector" uid="connector-525" startpinid="Rail-297-outnod" endpinid="Potentiometer-11-PinB" pointList="748,540,740,540" />
+
+<item itemtype="Connector" uid="connector-540" startpinid="AudioOut-422-rPin" endpinid="Ground-424-Gnd" pointList="1156,500,1132,500,1132,504" />
+
+<item itemtype="Connector" uid="Connector-559" startpinid="AudioOut-422-lPin" endpinid="Capacitor-558-rPin" pointList="1156,492,1156,492" />
+
+<item itemtype="Connector" uid="Connector-561" startpinid="Capacitor-558-lPin" endpinid="Uno-1-A5" pointList="1124,492,1112,492" />
+
+<item itemtype="Connector" uid="Connector-562" startpinid="SR04-4-outpin" endpinid="Uno-1-11" pointList="844,684,844,692,940,692,940,588,968,588" />
+
+</circuit>
